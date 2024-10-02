@@ -6,10 +6,10 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
     volumes:
-      - ..:/home/vscode/workspace:cached
-      - ~/.ssh:/home/vscode/.ssh
-      - node-modules:/home/vscode/workspace/node_modules
-    working_dir: /home/vscode/workspace
+      - ..:/home/node/workspace:cached
+      - ~/.ssh:/home/node/.ssh
+      - node-modules:/home/node/workspace/node_modules
+    working_dir: /home/node/workspace
 
 volumes:
   node-modules:  
